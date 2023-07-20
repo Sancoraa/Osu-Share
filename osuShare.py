@@ -36,13 +36,7 @@ elif choice == 'imp':
 		for line in file:
 			url_to_file = 'https://api.chimu.moe/v1/download/' + line.strip()
 			print(url_to_file)
-			result = subprocess.run(['curl', '-O', '--output-dir', directory_name, url_to_file])
-			#result = subprocess.run(['wget', '--content-disposition', '-P', directory_name, url_to_file])
-			#if result.returncode == 0:
-			#	print('File downloaded sucessfully.')
-			#else:
-			#	print('Error downloading file')
-			#print(line.strip())
+			result = subprocess.run(['wget', '--content-disposition', '-P', directory_name, url_to_file])
 
 else:
 	print('Please write imp or exp')
