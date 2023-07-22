@@ -23,6 +23,7 @@
  ```
  git clone https://github.com/Sancoraa/Osu-Share.git
  cd Osu-Share
+ pip install -r requirements.txt
  python osuShare.py
  ```
 
